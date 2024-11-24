@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 
-
-
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -13,9 +11,9 @@ export default function Navbar() {
 
     const handleScroll = () => {
       if (window.pageYOffset > lastScrollY) {
-        setIsScrolled(true); // Hide navbar
+        setIsScrolled(true); 
       } else {
-        setIsScrolled(false); // Show navbar
+        setIsScrolled(false); 
       }
       lastScrollY = window.pageYOffset;
     };
@@ -25,7 +23,6 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    // Check local storage for the theme preference
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark") {
       setDarkMode(true);
@@ -102,7 +99,8 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        {/* Dark Mode Toggle Button */}
+      
+      
         <button
             onClick={toggleDarkMode}
             className="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-400 dark:hover:bg-gray-900 flex items-center justify-center"
