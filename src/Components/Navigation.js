@@ -54,14 +54,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        <div className="text-xl font-bold text-blue-500 dark:text-white">
-          My Portfolio
+        <div className="text-xl font-bold text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out">
+         <a href="#hero"> Abdul Rehman</a>
         </div>
         <ul className="flex space-x-4">
           <li>
             <a
               href="#hero"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
+              className="text-gray-700 font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
             >
               Home
             </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
           <li>
             <a
               href="#about"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
+              className="text-gray-700 font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
             >
               About
             </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
           <li>
             <a
               href="#skills"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
+              className="text-gray-700 font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
             >
               Skills
             </a>
@@ -85,7 +85,7 @@ export default function Navbar() {
           <li>
             <a
               href="#projects"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
+              className="text-gray-700 font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
             >
               View My Work
             </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
+              className="text-gray-700 font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 ease-in-out"
             >
               Contact
             </a>
@@ -108,7 +108,7 @@ export default function Navbar() {
             {darkMode ? (
                 <SunIcon className="w-6 h-6 text-yellow-500 hover:animate-spin" />
             ) : (
-                <MoonIcon className="w-6 h-6 text-blue-500 hover:animate-spin" />
+                <MoonIcon className="w-6 h-6 text-blue-500 hover:animate-pulse" />
             )}
         </button>
 
