@@ -95,7 +95,7 @@ export default function Skills() {
             {/* Pop-up Box */}
             {hoveredSkill === skill.id && (
               <div
-                className={`absolute top- left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-6 ${
+                className={`absolute top-20 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-6 ${
                   isMobile ? "w-full px-6" : "w-64"
                 } text-gray-700 dark:text-white z-10 animate-fade duration-300`}
               >
